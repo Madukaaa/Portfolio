@@ -729,8 +729,9 @@ transition: all 0.2s ease;
     width: 100%;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    padding: 20px;
     position: relative;
+    padding: 10px;
+    text-align: center;
 }
 
 .contactText {
@@ -749,12 +750,12 @@ transition: all 0.2s ease;
     font-size: clamp(0.875rem, 2vw, 1rem);
     text-align: justify;
     text-justify: inter-word;
-    line-height: 1.6;
     padding-top: 20px;
     padding-bottom: 50px;
     white-space: pre-wrap;
-    max-width: 800px;
     margin: 0 auto;
+    max-width: 100%;
+    line-height: 1.5;
 }
 
 .contact-form {
@@ -763,6 +764,7 @@ transition: all 0.2s ease;
     border-radius: 5px;
     width: 500px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: auto;
 }
 
 .contact-form input[required],
@@ -982,13 +984,18 @@ textarea:invalid + .error-message {
         width: 60px;
     }
 
-    .contact {
-        padding: 15px;
-        margin: 30px auto;
-    }
-    
     .contact-form {
+        width: 100%;
         padding: 20px;
+        margin: 0 auto;
+    }
+    .contact-form input, 
+    .contact-form textarea {
+        font-size: 14px;
+    }
+    .contact-form button {
+        font-size: 14px;
+        padding: 10px 20px;
     }
 
     .project-grid {
@@ -1086,8 +1093,32 @@ textarea:invalid + .error-message {
         font-size: 0.7em;
     }
 
-    .contact-info {
-        font-size: 0.7em;
+    .contactText {
+        font-size: clamp(1rem, 4vw, 1.4rem);
+        padding-top: 80px;
+    }
+    .contact > pre {
+        font-size: 14px;
+        padding: 10px 15px;
+        text-align: left;
+    }
+    .contact-form {
+        box-shadow: none;
+        padding: 15px;
+        border-radius: 5px;
+        width: 90%;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .contact-form button {
+        font-size: 14px;
+        padding: 12px;
+    }
+    .form-group > label {
+        font-size: 14px;
     }
 
     .LogoFooter {
